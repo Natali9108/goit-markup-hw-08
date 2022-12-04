@@ -1,0 +1,6 @@
+.title {
+  margin-bottom: 50px;
+  @include fonts(36px, false, false, 42px, 0.03em);
+
+  text-align: center;
+}

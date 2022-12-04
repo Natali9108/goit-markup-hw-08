@@ -1,0 +1,34 @@
+@mixin section($pt: 94px, $pb: $pt) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin fonts(
+  $size: false,
+  $colour: false,
+  $weight: false,
+  $lh: false,
+  $ls: false
+) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh / $size;
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+  @if $colour {
+    color: $colour;
+  }
+}
+
+@mixin transition($property...) {
+  transition-property: $property;
+  transition-duration: 250px;
+  transition-timing-function: var(--timing-function);
+}

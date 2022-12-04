@@ -1,0 +1,97 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--footer-color);
+}
+
+.footer-section {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-wrap {
+  display: flex;
+}
+
+.footer__nav {
+  padding-right: 70px;
+  align-items: baseline;
+}
+
+.footer__address-list {
+  margin-top: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 231px;
+
+  font-style: normal;
+  @include fonts(14px, false, false, 24px, 0.03em);
+}
+
+.footer__address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__address-link {
+  color: var(--title-text-color);
+}
+
+.footer__contact-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__social {
+  padding: 12px 93px 0 0;
+}
+.footer__social-text {
+  display: block;
+  margin-bottom: 20px;
+
+  @include fonts(14px, var(--title-text-color), false, 16px, 0.03em);
+  text-transform: uppercase;
+}
+
+.footer__social-link {
+  color: var(--title-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__subscribe {
+  padding-top: 12px;
+}
+
+.footer__subscribe--text {
+  margin-bottom: 20px;
+
+  @include fonts(14px, var(--title-text-color), 700, 16px, 0.03em);
+  text-transform: uppercase;
+}
+
+.footer__subscribe-form {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__subscribe-input {
+  width: 358px;
+  padding: 14px 16px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  @include transition(border-color);
+
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+}
+
+.footer__subscribe-input::placeholder {
+  @include fonts(16px, rgba(255, 255, 255, 0.6), false, 20px, 0.03em);
+}

@@ -1,0 +1,33 @@
+.clients {
+  @extend %section;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  color: var(--socials-icon-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  @include transition(color, border);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid #2196f3;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

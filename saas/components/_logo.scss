@@ -1,0 +1,18 @@
+.logo {
+  font-family: var(--secondary-font);
+  @include fonts(26px, var(--accent-color), 700, 31px, 0.03em);
+
+  @include transition(color);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.logo--black {
+  color: var(--studio-footer-color);
+}
+.logo--white {
+  color: var(--title-text-color);
+}

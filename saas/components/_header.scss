@@ -6,6 +6,12 @@
   align-items: center;
 }
 
+.header-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .header-nav__list {
   display: flex;
   margin-left: 93px;
@@ -40,6 +46,7 @@
 
 .header-nav__link,
 .header__contact-link {
+  display: none;
   display: block;
   padding-top: 31px;
   padding-bottom: 31px;
@@ -55,11 +62,16 @@
 .header__contact-list {
   display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .header__contact-list .header-nav__item + .header-nav__item {
   margin-left: 50px;
 }
 .header__contact-link {
+  display: none;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -73,5 +85,9 @@
   }
 }
 .header__contact-icon {
+  fill: currentColor;
+}
+
+.header__phone-menu {
   fill: currentColor;
 }

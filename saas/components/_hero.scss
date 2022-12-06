@@ -26,4 +26,10 @@
   @include fonts(44px, var(--title-text-color), 900, 60px, 0.06em);
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1199px) {
+    width: 360px;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+  }
 }

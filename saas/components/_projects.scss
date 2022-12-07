@@ -5,11 +5,23 @@
 .project__filter-list {
   margin-bottom: 50px;
   display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
   justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    max-width: 325px;
+    margin-bottom: 40px;
+    row-gap: 15px;
+    justify-content: start;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
 }
 
 .project__filter-item {
-  margin-right: 8px;
 }
 
 .project__list {
@@ -19,7 +31,19 @@
 }
 
 .project__item {
-  flex-basis: calc((100% - 60px) / 3);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+.project__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .project__link {

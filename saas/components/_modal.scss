@@ -32,6 +32,13 @@
   border-radius: 4px;
 
   @include transition(transform, opacity);
+
+  @media screen and (max-width: 767px) {
+    padding: 40px;
+    top: 60%;
+    min-width: 450px;
+    min-height: 609px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -52,7 +59,7 @@
 .modal__lable {
   display: block;
 
-  padding-top: 40px;
+  // padding-top: 40px;
   margin-bottom: 12px;
 
   font-size: 20px;
@@ -64,8 +71,8 @@
 }
 
 .modal__form-group {
-  padding-left: 40px;
-  padding-right: 40px;
+  // padding-left: 40px;
+  //  padding-right: 40px;
   margin-bottom: 20px;
 }
 

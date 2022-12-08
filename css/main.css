@@ -1492,7 +1492,7 @@ img {
   }
 }
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   display: -webkit-box;
@@ -1502,11 +1502,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
-  min-height: 100vh;
+  min-width: 480px;
+  min-height: 100%;
   padding: 48px 40px;
+  overflow: auto;
   background-color: var(--title-text-color);
-  z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
@@ -1516,6 +1516,7 @@ img {
 }
 
 .menu-container.is-open {
+  pointer-events: initial;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }

@@ -45,24 +45,25 @@
 }
 
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 
   display: flex;
   flex-direction: column;
 
-  width: 100vw;
-  min-height: 100vh;
+  min-width: 480px;
+  min-height: 100%;
   padding: 48px 40px;
+  overflow: auto;
   background-color: var(--title-text-color);
-  z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
 
 .menu-container.is-open {
+  pointer-events: initial;
   transform: translateX(0);
 }
 

@@ -48,13 +48,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  min-height: 796px;
-  padding: 48px 40px;
 
   display: flex;
   flex-direction: column;
 
+  width: 100vw;
+  min-height: 100vh;
+  padding: 48px 40px;
   background-color: var(--title-text-color);
   z-index: 999;
 
@@ -93,10 +93,6 @@
   margin: 0;
   margin-bottom: auto;
   list-style: none;
-}
-
-.mobile-menu-item:not(:last-child) {
-  margin-bottom: 32px;
 }
 
 .mobile-menu .link {

@@ -161,10 +161,13 @@
           <ul class="work__list list">
             <li class="work__item">
               <img
-                src="./img/work/about-img-1.jpg"
+                class="work__img"
+                srcset="./img/work/img_dek@1x.jpg, ./img/work/img_dek@2x.jpg"
+                src="./img/work/img_dek@1x.jpg"
                 alt="studio-work"
                 width="370"
                 height="294"
+                loading="lazy"
               />
               <div class="work__overlay">
                 <p class="work__ovarlay-text">Десктопні додатки</p>
@@ -172,7 +175,12 @@
             </li>
             <li class="work__item">
               <img
-                src="./img/work/about-img-2.jpg"
+                class="work__img"
+                srcset="
+                  ./img/work/img_dek@1x-1.jpg,
+                  ./img/work/img_dek@2x-1.jpg
+                "
+                src="./img/work/img_dek@1x-1.jpg"
                 alt="studio-work"
                 width="370"
                 height="294"
@@ -183,7 +191,12 @@
             </li>
             <li class="work__item">
               <img
-                src="./img/work/about-img-3.jpg"
+                class="work__img"
+                srcset="
+                  ./img/work/img_dek@1x-2.jpg,
+                  ./img/work/img_dek@2x-2.jpg
+                "
+                src="./img/work/img_dek@1x-2.jpg"
                 alt="studio-work"
                 width="370"
                 height="294"
@@ -203,11 +216,23 @@
           <ul class="team__list list">
             <li class="team__card-item">
               <img
-                src="./img/team/team-card-1.jpg"
+                class="team__img"
+                srcset="
+                  ./img/team/_dek@1x.jpg 270w,
+                  ./img/team/_tab@1x.jpg 354w,
+                  ./img/team/_mob@1x.jpg 450w,
+                  ./img/team/_dek@2x.jpg 540w,
+                  ./img/team/_tab@2x.jpg 708w,
+                  ./img/team/_mob@2x.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./img/team/_mob@1x.jpg"
                 alt="team-card"
-                width="270"
-                height="260"
+                loading="lazy"
+                width="450"
+                height="460"
               />
+
               <div class="team__wrappe">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -270,10 +295,21 @@
             </li>
             <li class="team__card-item">
               <img
-                src="./img/team/team-card-2.jpg"
+                class="team__img"
+                srcset="
+                  ./img/team/_dek@1x-1.jpg 270w,
+                  ./img/team/_tab@1x-1.jpg 354w,
+                  ./img/team/_mob@1x-1.jpg 450w,
+                  ./img/team/_dek@2x-1.jpg 540w,
+                  ./img/team/_tab@2x-1.jpg 708w,
+                  ./img/team/_mob@2x-1.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./img/team/_mob@1x-1.jpg"
                 alt="team-card"
-                width="270"
-                height="260"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team__wrappe">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
@@ -337,10 +373,21 @@
             </li>
             <li class="team__card-item">
               <img
-                src="./img/team/team-card-3.jpg"
+                class="team__img"
+                srcset="
+                  ./img/team/_dek@1x-2.jpg 270w,
+                  ./img/team/_tab@1x-2.jpg 354w,
+                  ./img/team/_mob@1x-2.jpg 450w,
+                  ./img/team/_dek@2x-2.jpg 540w,
+                  ./img/team/_tab@2x-2.jpg 708w,
+                  ./img/team/_mob@2x-2.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./img/team/_mob@1x-2.jpg"
                 alt="team-card"
-                width="270"
-                height="260"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team__wrappe">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
@@ -404,10 +451,21 @@
             </li>
             <li class="team__card-item">
               <img
-                src="./img/team/team-card-4.jpg"
+                class="team__img"
+                srcset="
+                  ./img/team/_dek@1x-3.jpg 270w,
+                  ./img/team/_tab@1x-3.jpg 354w,
+                  ./img/team/_mob@1x-3.jpg 450w,
+                  ./img/team/_dek@2x-3.jpg 540w,
+                  ./img/team/_tab@2x-3.jpg 708w,
+                  ./img/team/_mob@2x-3.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./img/team/_mob@1x-3.jpg"
                 alt="team-card"
-                width="270"
-                height="260"
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team__wrappe">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>

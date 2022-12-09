@@ -12,6 +12,14 @@
   @media screen and (max-width: 767px) {
     flex-basis: calc((100% - 30px) / 2);
   }
+
+  @media screen and (max-width: 1199px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
@@ -19,18 +27,6 @@
   justify-content: center;
   align-items: center;
   height: 92px;
-
-  // @media screen and (max-width: 767px) {
-  //   width: 210px;
-  //}
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 226px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 170px;
-  }
 
   color: var(--socials-icon-color);
   border: 1px solid #afb1b8;

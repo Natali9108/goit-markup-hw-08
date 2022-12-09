@@ -1181,6 +1181,11 @@ img {
   -webkit-transition-timing-function: var(--timing-function);
           transition-timing-function: var(--timing-function);
 }
+@media screen and (max-width: 1199px) {
+  .backdrop {
+    left: -10px;
+  }
+}
 
 .backdrop.is-hidden {
   opacity: 0;

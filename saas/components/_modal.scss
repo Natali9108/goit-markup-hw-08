@@ -10,6 +10,10 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   @include transition(opacity, visibility);
+
+  @media screen and (max-width: 1199px) {
+    left: -10px;
+  }
 }
 
 .backdrop.is-hidden {

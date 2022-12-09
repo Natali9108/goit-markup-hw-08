@@ -1216,8 +1216,8 @@ img {
     min-height: 609px;
     padding: 40px;
     top: 93px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
 }
 

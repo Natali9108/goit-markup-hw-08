@@ -39,12 +39,15 @@
   @include transition(transform, opacity);
 
   @media screen and (max-width: 1199px) {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 450px;
     min-height: 609px;
     padding: 40px;
 
     top: 93px;
-    transform: translate(-50%, 0);
+    //transform: translate(-50%, 0);
   }
 }
 

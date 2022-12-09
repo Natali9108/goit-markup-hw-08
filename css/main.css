@@ -1521,7 +1521,6 @@ img {
 }
 
 .menu-container.is-open {
-  pointer-events: initial;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }

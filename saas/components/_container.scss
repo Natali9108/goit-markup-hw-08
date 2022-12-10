@@ -11,8 +11,8 @@ $breakpoints: (
   padding-right: 15px;
 
   //phone screen
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
   }
 
   //tablet screen
